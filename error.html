@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      color: #58a6ff;
+      animation: glow .1s ease-in-out infinite alternate;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #8b949e;
+    }
+
+    p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    .construction {
+      width: 300px;
+      margin: 20px auto;
+      animation: bounce 2s infinite;
+    }
+
+    a {
+      margin-top: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #58a6ff;
+      color: #0d1117;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #1f6feb;
+      color: #ffffff;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #58a6ff, 0 0 20px #58a6ff;
+      }
+      to {
+        text-shadow: 0 0 20px #58a6ff, 0 0 30px #58a6ff;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+  <p>Sorry, the page you are looking for is under construction or missing!</p>
+  <img class="construction" src="https://my-tf-bucket-bn.s3.us-east-1.amazonaws.com/construction.png" alt="Construction Animation">
+  
+  <a href="index.html">Go Back Home</a>
+
+</body>
+</html>
