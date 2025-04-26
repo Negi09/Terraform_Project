@@ -1,2 +1,2 @@
 # Terraform_Project-
-Deploying a static web on aws using terraform 
+Deploying a static web on aws using terraform files.
