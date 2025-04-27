@@ -39,7 +39,7 @@ This project uses **Terraform** to create an AWS **S3 bucket** for static websit
 
 ```bash
 # Clone this repository
-git clone https://github.com/YourUsername/Terraform_Project-.git
+git clone https://github.com/Negi09/Terraform_Project-.git
 cd Terraform_Project-
 
 # Initialize Terraform
@@ -67,7 +67,7 @@ terraform apply
 
 ## 🚨 Important
 
-- Make sure your **state bucket** and **DynamoDB table** exist **before** running `terraform init`.
+- Make sure your **state bucket** as used in this project and **DynamoDB table** exist **before** running `terraform init`.
 - `.terraform/`, `.tfstate`, `.tfvars`, and other sensitive files are **ignored** in `.gitignore`.
 - **Never** hardcode sensitive credentials directly in the code.
 
